@@ -10,6 +10,9 @@ add_executable(KN0-LANG
 "includes/Lexer.h"
 "src/Lexer.cpp"
 "includes/Expr.h"
+"includes/Parser.h"
+"src/Parser.cpp"
+"includes/stmt.h"
 )
 
 target_include_directories(KN0-LANG PRIVATE includes)
