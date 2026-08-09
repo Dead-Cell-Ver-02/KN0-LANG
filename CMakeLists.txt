@@ -13,6 +13,11 @@ add_executable(KN0-LANG
 "includes/Parser.h"
 "src/Parser.cpp"
 "includes/stmt.h"
+"includes/Instruction.h"
+"includes/Compiler.h"
+"src/Compiler.cpp"
+"includes/Machine.h"
+"src/Machine.cpp"
 )
 
 target_include_directories(KN0-LANG PRIVATE includes)

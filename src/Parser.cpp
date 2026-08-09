@@ -1,10 +1,14 @@
 #include "Parser.h"
 #include <iostream>
 
+Parser::Parser( const std::vector<Token>& tokens , bool shouldLog )
+	: tokens( tokens ) , shouldLog( shouldLog )
+{}
+
 void Parser::log( const std::string& message )
 {
 	if ( shouldLog )
-		std::cout << message;
+		std::cout << message << "\n";
 }
 
 std::vector<std::unique_ptr<Stmt>> Parser::parse()
